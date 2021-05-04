@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" 
+     integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <style>
+      body{
+        font-family: sans-serif;
+      }
+      .label2{
+        color: gray;
+        font-size: small;
+        font-weight: bold;
+      }
+      input{
+        border: 2px solid #e0e0e0;
+      }
+      .label1{
+        font-weight: bold;
+        font-size: large;
+      }
+      table{
+        table-layout: fixed;
+        width: 100%;
+      }
+      span{
+        color: red;
+      }
+      td{
+        width: 25%;
+      }
+      .star{
+        color: #ffc4c4;
+      }
+      .radio{
+        transform: scale(1.5);
+        margin-top: 9px;
+      }
+    </style>
+</head>
+<body>
+   <div style="padding: 50px 180px 50px 180px;">
+     <label for="name" class="label1">Name <span>*</span></label><br>
+     <input type="text" name="firstName" id="name" style="width: 20%;height: 35px; margin-right: 20px;">
+     <input type="text" name="lastName" id="name" style="width: 20%;height: 35px;"><br>
+     <label for="first" class="label2" style="padding-right: 225px;">First</label>
+     <label for="last" class="label2">Last</label><br>
+     <label for="Email" class="label1">Email <span>*</span></label><br>
+     <input type="text" name="email" id="emaik" style="width: 42%;"><br>
+     <label for="exp" class="label1" style="padding-top: 15px;">Your Experience <span>*</span></label><br>
+     <i class="fa fa-star fa-2x star" ></i>
+     <i class="fa fa-star fa-2x star" ></i>
+     <i class="fa fa-star fa-2x star" ></i>
+     <i class="fa fa-star fa-2x star" ></i>
+     <i class="fa fa-star fa-2x star" ></i><br>
+     <label for="expWith" style="padding-top: 15px;">Overall, how would you rate you experience with us?</label><br>
+     <label class="label1" style="margin-top: 25px;" >How satisfied are you with <span>*</span></label><br>
+     <div>
+       <div class="container">
+        <div class="row" style="height: 30px;">
+          <div class="col"></div>
+          <div class="col">Very Unsatisfied</div>
+          <div class="col">Unsatisfied</div>
+          <div class="col">Neutral</div>
+          <div class="col">Satisfied</div>
+          <div class="col">Very Satisfied</div>
+        </div>
+        <div class="row" style="background-color: #eae8e8; height: 30px;">
+          <div class="col">Purchase</div>
+          <div class="col" ><input class="radio" type="radio" name="Very Unsatisfied" style="margin-left: 35%;"></div>
+          <div class="col" ><input class="radio" type="radio" name="Unsatisfied" style="margin-left: 20%;"></div>
+          <div class="col" ><input class="radio" type="radio" name="Neutral" style="margin-left: 10%;"></div>
+          <div class="col" ><input class="radio" type="radio" name="Satisfied" style="margin-left: 15%;"></div>
+          <div class="col" ><input class="radio" type="radio" name="Very Satisfied" style="margin-left: 30%;"></div>
+        </div>
+        <div class="row" style=" height: 30px;">
+          <div class="col">Service</div>
+          <div class="col" ><input class="radio" type="radio" name="Very Unsatisfied" style="margin-left: 35%;"></div>
+          <div class="col" ><input class="radio" type="radio" name="Unsatisfied" style="margin-left: 20%;"></div>
+          <div class="col" ><input class="radio" type="radio" name="Neutral" style="margin-left: 10%;"></div>
+          <div class="col" ><input class="radio" type="radio" name="Satisfied" style="margin-left: 15%;"></div>
+          <div class="col" ><input class="radio" type="radio" name="Very Satisfied" style="margin-left: 30%;"></div>
+        </div>
+        <div class="row" style="background-color: #eae8e8; height: 30px;">
+          <div class="col">Company Overall</div>
+          <div class="col" ><input class="radio" type="radio" name="Very Unsatisfied" style="margin-left: 35%;"></div>
+          <div class="col" ><input class="radio" type="radio" name="Unsatisfied" style="margin-left: 20%;"></div>
+          <div class="col" ><input class="radio" type="radio" name="Neutral" style="margin-left: 10%;"></div>
+          <div class="col" ><input class="radio" type="radio" name="Satisfied" style="margin-left: 15%;"></div>
+          <div class="col" ><input class="radio" type="radio" name="Very Satisfied" style="margin-left: 30%;"></div>
+        </div>
+       </div>
+     </div>
+     <label class="label1" style="margin-top: 25px;">How Likely are you to <span>*</span></label><br>
+     <div>
+        <div class="container">
+          <div class="row" style="height: 30px;">
+            <div class="col"></div>
+            <div class="col">Very Unlikely</div>
+            <div class="col">Unlikely</div>
+            <div class="col">Neutral</div>
+            <div class="col">Likely</div>
+            <div class="col">Very Likely</div>
+          </div>
+          <div class="row" style="background-color: #eae8e8; height: 30px;">
+            <div class="col">Buy from us again</div>
+            <div class="col" ><input class="radio" type="radio" name="Very Unsatisfied" style="margin-left: 35%;"></div>
+            <div class="col" ><input class="radio" type="radio" name="Unsatisfied" style="margin-left: 20%;"></div>
+            <div class="col" ><input class="radio" type="radio" name="Neutral" style="margin-left: 10%;"></div>
+            <div class="col" ><input class="radio" type="radio" name="Satisfied" style="margin-left: 15%;"></div>
+            <div class="col" ><input class="radio" type="radio" name="Very Satisfied" style="margin-left: 30%;"></div>
+          </div>
+          <div class="row" style=" height: 50px;">
+            <div class="col">Recommend our product to others</div>
+            <div class="col" ><input type="radio" name="Very Unsatisfied" style="margin-left: 35%; transform: scale(1.5); margin-top: 20px;"></div>
+            <div class="col" ><input type="radio" name="Unsatisfied" style="margin-left: 20%; transform: scale(1.5); margin-top: 20px;"></div>
+            <div class="col" ><input type="radio" name="Neutral" style="margin-left: 10%; transform: scale(1.5); margin-top: 20px;"></div>
+            <div class="col" ><input type="radio" name="Satisfied" style="margin-left: 15%; transform: scale(1.5); margin-top: 20px;"></div>
+            <div class="col" ><input type="radio" name="Very Satisfied" style="margin-left: 30%; transform: scale(1.5); margin-top: 20px;"></div>
+          </div>
+          <div class="row" style="background-color: #eae8e8; height: 50px;">
+            <div class="col">Recommend our company to others</div>
+            <div class="col" ><input type="radio" name="Very Unsatisfied" style="margin-left: 35%; transform: scale(1.5); margin-top: 20px;"></div>
+            <div class="col" ><input type="radio" name="Unsatisfied" style="margin-left: 20%; transform: scale(1.5); margin-top: 20px;"></div>
+            <div class="col" ><input type="radio" name="Neutral" style="margin-left: 10%; transform: scale(1.5); margin-top: 20px;"></div>
+            <div class="col" ><input type="radio" name="Satisfied" style="margin-left: 15%; transform: scale(1.5); margin-top: 20px;"></div>
+            <div class="col" ><input type="radio" name="Very Satisfied" style="margin-left: 30%; transform: scale(1.5); margin-top: 20px;"></div>
+          </div>
+        </div>
+     </div>
+     <label class="label1" style="margin-top: 25px;">Additional comments or suggestions</label><br>
+     <textarea name="acomments" id="" cols="140.5" rows="5" style="border: 2px solid #e0e0e0;"></textarea><br>
+     <input type="submit" value="submit" style="border: 2px solid #e0e0e0; width: 10%; padding: 10px 0;">
+   </div>
+</body>
+</html>
